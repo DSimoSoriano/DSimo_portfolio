@@ -15,7 +15,7 @@ const PortfolioBox = (props: PortfolioBoxProps) => {
     const { data } = props
     const {id, title, image, urlGithub, urlDemo} = data
     return (
-        <div className="p-4 border border-teal-50 rounded-xl">
+        <div key={id} className="p-4 border border-teal-50 rounded-xl">
             <h3 className="mb-4 text-xl">{title}</h3>
             <Image src={image} alt="Image product" width={200} height={200} className="w-full md:w-[200px] rounded-2xl h-auto"/>
             
